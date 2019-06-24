@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "Arduino_MusicBox", "Arduino_MusicBox.vgdbproj", "{4DD8DDBB-65CF-4291-B46E-3002DFFC7212}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Generic_STM32F0_series = Debug|Generic_STM32F0_series
+		Release|Generic_STM32F0_series = Release|Generic_STM32F0_series
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DD8DDBB-65CF-4291-B46E-3002DFFC7212}.Debug|Generic_STM32F0_series.ActiveCfg = Debug|Generic_STM32F0_series
+		{4DD8DDBB-65CF-4291-B46E-3002DFFC7212}.Debug|Generic_STM32F0_series.Build.0 = Debug|Generic_STM32F0_series
+		{4DD8DDBB-65CF-4291-B46E-3002DFFC7212}.Release|Generic_STM32F0_series.ActiveCfg = Release|Generic_STM32F0_series
+		{4DD8DDBB-65CF-4291-B46E-3002DFFC7212}.Release|Generic_STM32F0_series.Build.0 = Release|Generic_STM32F0_series
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0566722-6751-4897-B4C4-0C5ABBD59433}
+	EndGlobalSection
+EndGlobal
