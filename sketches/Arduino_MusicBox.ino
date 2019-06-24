@@ -19,6 +19,10 @@ void loop()
 	if (btn.wasPressed())
 	{
 		Play(unOwen);
+		delay(500);
+		Play(suimu);
+		delay(500);
+		Play(mahou);
 	}
 }
 
