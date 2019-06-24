@@ -10,6 +10,7 @@ Button btn(BUTTON_PIN);
 void setup()
 {
 	pinMode(TONE_PIN, OUTPUT_OPEN_DRAIN);
+	digitalWrite(TONE_PIN, HIGH);
 	pinMode(BUTTON_PIN, INPUT);
 }
 
