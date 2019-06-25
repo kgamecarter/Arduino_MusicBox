@@ -136,6 +136,7 @@
       </DebugSettingsOverride>
       <BuildSettingsExtension xsi:type="com.visualgdb.build.external.arduino.extension">
         <BoardID>STM32:stm32:GenF0</BoardID>
+        <COMPort>COM1</COMPort>
         <Properties>
           <Entries>
             <KeyValue>

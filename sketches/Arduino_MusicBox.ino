@@ -13,17 +13,34 @@ void setup()
 	digitalWrite(TONE_PIN, HIGH);
 	pinMode(BUTTON_PIN, INPUT);
 }
-
+int sel = -1;
 void loop()
 {
 	btn.read();
-	if (btn.wasPressed())
+	if (btn.pressedFor(500))
 	{
-		Play(unOwen);
-		delay(500);
-		Play(suimu);
-		delay(500);
-		Play(mahou);
+		switch (sel)
+		{
+		case 1:
+			Play(suimu);
+			break;
+		case 2:
+			Play(mahou);
+			break;
+		case 0:
+		default:
+			Play(unOwen);
+			break;
+		}
+	}
+	else if (btn.wasReleased())
+	{
+		sel = (sel + 1) % 3;
+		for (int i = sel + 1; i > 0; i--)
+		{
+			tone(TONE_PIN, 2048, 100);
+			delay(150);
+		}
 	}
 }
 
