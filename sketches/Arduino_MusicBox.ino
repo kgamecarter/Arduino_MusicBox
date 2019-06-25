@@ -55,7 +55,7 @@ void Play(const Node* ptrNode)
 	{
 		switch (ptrNode->scale)
 		{
-		case SET_TEMPO_TIME: // 設定節拍時間
+		case SET_TEMPO_TIME: // 設定16分音符節拍時間
 			tempoTime = ptrNode->tempo;
 			continue;
 		case SET_SCALE_OFFSET: // 設定移調
