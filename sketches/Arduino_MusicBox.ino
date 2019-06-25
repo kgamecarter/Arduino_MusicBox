@@ -48,7 +48,7 @@ void loop()
 #define DELAY_TIME 5
 void Play(const Node* ptrNode)
 {
-	uint8_t tempoTime = 150, repeatTime;
+	uint8_t tempoTime = 150, repeatTimes;
 	const Node* repeatPos;
 	int8_t scaleOffset = 0; // 移調變數
 	for (; ptrNode->tempo != 0xFE ; ptrNode++)
@@ -63,10 +63,10 @@ void Play(const Node* ptrNode)
 			continue;
 		case SET_REPERT_POS: // 設置反覆起點, 反覆次數
 			repeatPos = ptrNode;
-			repeatTime =  ptrNode->tempo;
+			repeatTimes =  ptrNode->tempo;
 			continue;
 		case REPERT: // 反覆終點
-			if (repeatTime--) // 反覆次數0前跳回反覆起點
+			if (repeatTimes--) // 反覆次數0前跳回反覆起點
 				ptrNode = repeatPos;
 			continue;
 		case RES: // 休止符
