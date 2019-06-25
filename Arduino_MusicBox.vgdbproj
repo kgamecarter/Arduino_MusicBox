@@ -153,7 +153,7 @@
             </KeyValue>
             <KeyValue>
               <Key>opt</Key>
-              <Value>ogstd</Value>
+              <Value>osstd</Value>
             </KeyValue>
             <KeyValue>
               <Key>rtlib</Key>
