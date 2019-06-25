@@ -28,7 +28,6 @@ void loop()
 		case 2:
 			Play(mahou);
 			break;
-		case 0:
 		default:
 			Play(unOwen);
 			break;
