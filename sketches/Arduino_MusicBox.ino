@@ -11,7 +11,6 @@ void setup()
 {
 	pinMode(TONE_PIN, OUTPUT_OPEN_DRAIN);
 	digitalWrite(TONE_PIN, HIGH);
-	pinMode(BUTTON_PIN, INPUT);
 }
 
 int sel = -1;
@@ -51,7 +50,7 @@ void Play(const Node* ptrNode)
 	uint8_t tempoTime = 150, repeatTimes;
 	const Node* repeatPos;
 	int8_t scaleOffset = 0; // 移調變數
-	for (; ptrNode->tempo != 0xFE ; ptrNode++)
+	for (; ptrNode->tempo != END ; ptrNode++)
 	{
 		switch (ptrNode->scale)
 		{

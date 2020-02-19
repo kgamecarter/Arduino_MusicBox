@@ -25,10 +25,14 @@
     </ProjectModeSettings>
   </Project>
   <Build xsi:type="com.visualgdb.build.external.arduino">
+    <BuildLogMode xsi:nil="true" />
     <IgnoreNormalLibraryDirectories>false</IgnoreNormalLibraryDirectories>
     <OutputSubdirectory>Output\$(PlatformName.defuse)\$(ConfigurationName.defuse)</OutputSubdirectory>
     <EnableVerboseBuild>false</EnableVerboseBuild>
     <PreprocessorMacros />
+    <ExtraCompilerFlags>
+      <string>-ggdb</string>
+    </ExtraCompilerFlags>
   </Build>
   <CustomBuild>
     <PreSyncActions />
@@ -95,11 +99,12 @@
           <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
           <EnableNonStopMode>false</EnableNonStopMode>
           <MaxBreakpointLimit>0</MaxBreakpointLimit>
+          <EnableVerboseMode>true</EnableVerboseMode>
         </AdditionalGDBSettings>
         <DebugMethod>
           <ID>com.sysprogs.arm.openocd</ID>
           <InterfaceID>stlink-v2</InterfaceID>
-          <InterfaceSerialNumber>6&amp;2F300A8C&amp;1&amp;2</InterfaceSerialNumber>
+          <InterfaceSerialNumber>7&amp;31007827&amp;1&amp;4</InterfaceSerialNumber>
           <Configuration xsi:type="com.visualgdb.edp.openocd.settings">
             <CommandLine>-f interface/stlink-v2.cfg -c "transport select hla_swd" -f target/stm32f0x.cfg -c init -c "reset init"</CommandLine>
             <ExtraParameters>
@@ -119,6 +124,8 @@
             <ProgramFLASHUsingExternalTool>false</ProgramFLASHUsingExternalTool>
             <PreferredGDBPort>0</PreferredGDBPort>
             <PreferredTelnetPort>0</PreferredTelnetPort>
+            <AlwaysPassSerialNumber>false</AlwaysPassSerialNumber>
+            <SelectedCoreIndex xsi:nil="true" />
           </Configuration>
         </DebugMethod>
         <AutoDetectRTOS>true</AutoDetectRTOS>

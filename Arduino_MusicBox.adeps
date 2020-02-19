@@ -1,0 +1,21 @@
+<!-- Add this file to source control in order to automatically restore library dependencies when opening the project on another machine -->
+<ArduinoDependencyCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Dependencies>
+    <Dependency>
+      <Type>Platform</Type>
+      <Key>
+        <Packager>STM32</Packager>
+        <Name>stm32</Name>
+        <Version>1.8.0</Version>
+      </Key>
+    </Dependency>
+    <Dependency>
+      <Type>Library</Type>
+      <Key>
+        <Packager>Jack Christensen &lt;jack.christensen@outlook.com&gt;</Packager>
+        <Name>JC_Button</Name>
+        <Version>2.1.2</Version>
+      </Key>
+    </Dependency>
+  </Dependencies>
+</ArduinoDependencyCollection>

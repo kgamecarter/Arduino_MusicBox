@@ -101,13 +101,14 @@
 #define RE8  98
 #define RE8_ 99
 
-#define RES  0xFF
+#define RES 0xFF
+#define END 0xFE 
 #define SET_TEMPO_TIME 0xFD
 #define SET_SCALE_OFFSET 0xFC
 #define SET_REPERT_POS 0xFB
 #define REPERT 0xFA
 
-const unsigned int FreqTable[] = {
+const uint16_t FreqTable[] = {
 	16, 17, 18, 19, 21, 22, 23, 25, 26, 28, 29, 31,
 	33, 35, 37, 39, 41, 44, 46, 49, 52, 55, 58, 62,
 	65, 69, 73, 78, 82, 87, 93, 98, 104, 110, 117, 123,
@@ -179,7 +180,7 @@ const Node unOwen[] = // U.N.オーエンは彼女なのか？
 	{ DO7_, 2 }, { RE7, 2 }, { DO7_, 2 }, { RE7, 1 }, { DO7_, 1 }, { SI6, 2 }, { LA6, 2 }, { FA6_, 2 }, { LA6, 2 }, { MI6, 2 }, { FA6_, 2 }, { RE6,  8 },
 	{ SI5, 4 }, { FA6_, 4 }, { DO6_, 4 }, { FA6_, 4 }, { RE6, 4 }, { MI6, 2 }, { FA6_, 2 }, { MI6, 4 }, { LA6, 4 }, { SI6, 2 }, { FA6_, 2 },
 	{ DO7_, 2 }, { RE7, 2 }, { DO7_, 2}, { RE7, 1}, { DO7_, 1}, { SI6, 2 }, { LA6, 2 }, { SI6, 32 },
-	{0xFE, 0xFE}
+	{ END, END }
 };
 
 const Node suimu[] = // 萃夢想
@@ -218,7 +219,7 @@ const Node suimu[] = // 萃夢想
 	
 	{ SET_TEMPO_TIME, 150 },
 	{ SI6, 1 }, { LA6, 1 }, { FA6_, 1 }, { MI6, 1 }, { FA6_, 1 }, { MI6, 1 }, { RE6, 1 }, { DO6_, 1 }, { SI5, 4 }, { SI4, 4 },
-	{0xFE, 0xFE}
+	{ END, END}
 };
 
 const Node mahou[] =  // 魔法少女達の百年祭
@@ -228,5 +229,5 @@ const Node mahou[] =  // 魔法少女達の百年祭
 	{ RE6, 2 }, { LA5, 2 }, { DO6, 2 }, { SO5, 2 }, { RE7, 2 }, { LA6, 2 }, { DO7, 2 }, { SO6, 2 }, { LA6, 2 }, { FA6, 2 }, { SO6, 2 }, { MI6, 2 },
 	{ FA6, 2 }, { RE6, 2 }, { MI6, 2 }, { DO6, 2 }, { RE6, 2 }, { LA5, 2 }, { DO6, 2 }, { SO5, 2 },
 	{ LA5, 6 }, { FA6, 16 }, { DO7, 6 }, { LA6_/**/, 4 }, { LA6, 32 },
-	{0xFE, 0xFE}
+	{ END, END }
 };
